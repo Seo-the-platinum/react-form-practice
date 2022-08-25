@@ -1,0 +1,55 @@
+@use '../../abstracts' as *;
+
+.error {
+    color: $errorColor;
+}
+
+.inputs form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputs input {
+    background-color: $inputBackground;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    height: 40px;
+    outline: none;
+    width: 95%;
+  }
+
+  .inputs input:focus {
+    box-shadow: 0 0 0 2px $inputShadow;
+  }
+
+.form {
+    align-self: center;
+    border-radius: 7px;
+    background-color: $formBackground;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    min-width: 80%;
+}
+
+.title {
+    color: $titleColor;
+    font-family: $titleFont;
+    font-size: $titleFontSize;
+    margin: 5% 0;
+}
+
+#submit {
+    border: none;
+    border-radius: 7px;
+    height: 30px;
+    min-width: 30%;
+    margin-bottom: 15px;
+}
+
+::placeholder {
+    color: white;
+}
