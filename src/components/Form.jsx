@@ -5,6 +5,7 @@ import { schema } from '../utils/formSchema'
 import './css/form.css'
 
 const Form = () => {
+    
     const { register, handleSubmit, formState:{errors} } = useForm({
         resolver: yupResolver(schema)
     })
